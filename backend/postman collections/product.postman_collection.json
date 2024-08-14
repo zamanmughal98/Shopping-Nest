@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "ea7c961d-845c-4ec0-9f87-10bf1301fd2b",
+		"name": "product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22511273"
+	},
+	"item": [
+		{
+			"name": "product Pagination",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/product/?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TCL 1.5 TON T-PRO DC INVERTER AC\",\r\n    \"description\": \"The TAC-18T3-Pro is a 1.5 Ton DC Inverter from TCL, an upgraded version of the TCL Miracle Series. It offers a completely controlled refreshment with IoT Wi-Fi, allowing you to adjust the temperature and turn the AC off or on at any time from anywhere. The Hands-Free Voice Control feature on your TCL TV also lets you control the AC.\",\r\n    \"productNo\": \"Model TAC 18T3 PRO\",\r\n    \"price\": 190000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TCL 1.5 TON T-PRO DC INVERTER AC\",\r\n    \"description\": \"The TAC-18T3-Pro is a 1.5 Ton DC Inverter from TCL, an upgraded version of the TCL Miracle Series. It offers a completely controlled refreshment with IoT Wi-Fi, allowing you to adjust the temperature and turn the AC off or on at any time from anywhere. The Hands-Free Voice Control feature on your TCL TV also lets you control the AC.\",\r\n    \"price\": 175999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/66b35dfc722aebc9913cf862",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"66b35dfc722aebc9913cf862"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/product/66b35dfc722aebc9913cf862",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"66b35dfc722aebc9913cf862"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
