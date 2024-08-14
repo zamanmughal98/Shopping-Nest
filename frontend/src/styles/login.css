@@ -1,0 +1,196 @@
+.loginPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  width: 70%;
+  height: 70%;
+  margin: 8% auto auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  overflow: hidden;
+}
+.loginSide {
+  flex: 1;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #6a6a6a !important;
+  font-family: monospace;
+}
+
+.heading {
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.subText {
+  margin: 0;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.inputWraper_column,
+.inputWraper_row {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputWraper_row {
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icons {
+  min-width: 30px;
+  color: rgba(0, 171, 159, 0.73);
+}
+.formInput {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-bottom: 4px solid white;
+  border-radius: 4px;
+  background-color: #ebebeb;
+  font-size: 1rem;
+  color: #6a6a6a;
+  font-family: inherit;
+  transition: all 1s ease;
+}
+.formInput:focus-visible {
+  outline: none;
+  border-bottom: 4px solid rgba(0, 171, 159, 0.73);
+}
+
+.togglePassword {
+  padding-top: 2px;
+  cursor: pointer;
+  color: rgba(0, 171, 159, 0.73);
+  font-size: 15px;
+}
+
+.forgetPassword {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-bottom: 5px;
+  color: rgba(0, 171, 159, 0.73);
+  font-size: 15px;
+}
+
+.forgetPassword::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: rgba(0, 171, 159, 0.73);
+  transition: all 1s ease;
+  transform: translateX(-50%);
+}
+.forgetPassword:hover::after {
+  width: 100%;
+}
+
+.button,
+.signup_button,
+.signin_button {
+  border-radius: 50px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: 900;
+}
+.signin_button {
+  color: #f8f9fa;
+  background: rgba(0, 171, 159, 0.73);
+  border: 2px solid #f8f9fa;
+}
+.signup_button {
+  color: rgba(0, 171, 159, 0.73);
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  margin-top: 25px;
+}
+.signin_button:hover {
+  background: #ffffff;
+  border-color: rgba(0, 171, 159, 1);
+  color: rgba(0, 171, 159, 1);
+  box-shadow: 0 4px 15px rgba(0, 171, 159, 0.5);
+  transform: scale(1.1);
+}
+
+.signup_button:hover {
+  background: rgba(0, 171, 159, 1);
+  border-color: rgba(0, 171, 159, 1);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 171, 159, 0.5);
+  transform: scale(1.1);
+}
+
+.signin_button:active {
+  background: rgba(0, 171, 159, 0.9);
+  color: white;
+  border-color: rgba(0, 171, 159, 0.9);
+  transform: scale(0.98);
+}
+
+.signup_button:active {
+  background: white;
+  color: rgba(0, 171, 159, 0.9);
+  border-color: rgba(0, 171, 159, 0.9);
+  transform: scale(0.98);
+}
+
+.signupSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 171, 159, 0.73);
+  color: white;
+  width: 30%;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .loginPage {
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    min-width: 480px;
+  }
+
+  .loginSide {
+    height: 70%;
+    width: 100%;
+  }
+  .signupSide {
+    height: 30%;
+    width: 100%;
+  }
+}
