@@ -53,7 +53,7 @@ const Login = () => {
     <section className="loginPage">
       <section className="loginSide">
         <h2 className="heading">Sign in to Shopping Nest</h2>
-        <p className="subText">or use your email account </p>
+        <p className="subText">use your email account </p>
         <form onSubmit={handleSubmit} className="loginForm">
           <div className="inputWraper_column">
             <div className="inputWraper_row">

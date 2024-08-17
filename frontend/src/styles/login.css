@@ -3,11 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: #fff;
+  background: rgb(0 0 0 / 50%);
   width: 70%;
   height: 70%;
   margin: 8% auto auto;
-  border-radius: 5px;
+  border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   overflow: hidden;
@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #6a6a6a !important;
+  color: lightcyan;
   font-family: monospace;
 }
 
@@ -87,6 +87,10 @@
   cursor: pointer;
   color: rgba(0, 171, 159, 0.73);
   font-size: 15px;
+  transition: all 1s ease;
+}
+.togglePassword:hover {
+  transform: scale(1.05);
 }
 
 .forgetPassword {
@@ -171,7 +175,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 171, 159, 0.73);
+  background: rgb(0 171 159 / 40%);
+
   color: white;
   width: 30%;
   padding: 0 10px;
