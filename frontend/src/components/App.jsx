@@ -1,5 +1,5 @@
 import '../styles/app.css';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Login from './login/login.jsx';
 import ErrorPage from './login/error/ErrorPage.jsx';
